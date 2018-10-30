@@ -8,10 +8,14 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
 import io.spring.guides.gs_producing_web_service.GetCountryRequest;
 import io.spring.guides.gs_producing_web_service.GetCountryResponse;
+//import io.spring.bb.guides.GetCountryRequest;
+//import io.spring.bb.guides.GetCountryResponse;
 
 @Endpoint
 public class CountryEndpoint {
+    // TODO - TNS
     private static final String NAMESPACE_URI = "http://spring.io/guides/gs-producing-web-service";
+//    private static final String NAMESPACE_URI = "http://bb.spring.io/guides";
 
     private CountryRepository countryRepository;
 
