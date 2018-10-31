@@ -1,0 +1,34 @@
+Clues on WTAF is meant to happen & how to demonstrate it ...
+
+Based on (effectively a copy of) spring.io starter guide at
+    http://spring.io/guides/gs/producing-web-service/
+
+Once it's running, use Postman or similar to call it.
+
+BODY meeds to look like:
+
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                      xmlns:gs="http://spring.io/guides/gs-producing-web-service">
+       <soapenv:Header/>
+       <soapenv:Body>
+          <gs:getCountryRequest>
+             <gs:name>Poland</gs:name>
+          </gs:getCountryRequest>
+       </soapenv:Body>
+    </soapenv:Envelope>
+
+HEADER needs to look like
+    Content-Type  =  text/xml
+
+
+    Get the header for free if change (in Postman) body type to "raw" & then in the drop down at right pick XML (text/xml)
+
+
+Currently auto-generates from the XSD file (in resources) to io.spring.guides.gs-producing-web-service, which I believe
+is picked up from the xsd file.  No point having it in git as it auto-generates.  Can augment the stuff it generates
+but other stuff won't pick up on it (the XSD -> WSDL -> used by clients of this server)
+
+Get wsdl via : http://localhost:8080/ws/countries.wsdl
+
+
+Could look at amending the Name Space at some point ...
