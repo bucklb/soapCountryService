@@ -5,6 +5,7 @@ Basic springBoot soap server. The soapCountryClient & omniCountryServer expect i
 ## Getting started
 
 mvn clean install
+
 run on 8080 (as other things expect it to)
 
 ### Prerequisites
