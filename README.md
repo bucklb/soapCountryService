@@ -2,7 +2,7 @@
 
 Basic springBoot soap server. The soapCountryClient & omniCountryServer expect it to be running on 8080 (so they can access wsdl in order to create corresponding classes)
 
-##Getting started
+## Getting started
 
 mvn clean install
 run on 8080 (as other things expect it to)
@@ -11,6 +11,6 @@ run on 8080 (as other things expect it to)
 
 none
 
-##Acknowledgements
+## Acknowledgements
 
 Result of a spring.io getting started guide
