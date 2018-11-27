@@ -1,5 +1,8 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
-           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+        targetNamespace="http://spring.io/guides/gs-producing-web-service"
+        elementFormDefault="qualified">
     <!-- TODO - TNS
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://bb.spring.io/guides"
            targetNamespace="http://bb.spring.io/guides" elementFormDefault="qualified">
@@ -37,4 +40,5 @@
             <xs:enumeration value="PLN"/>
         </xs:restriction>
     </xs:simpleType>
+
 </xs:schema>

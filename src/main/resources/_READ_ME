@@ -5,7 +5,7 @@ Based on (effectively a copy of) spring.io starter guide at
 
 Once it's running, use Postman or similar to call it.
 
-BODY meeds to look like:
+BODY needs to look like:
 
     <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
                       xmlns:gs="http://spring.io/guides/gs-producing-web-service">
@@ -32,3 +32,5 @@ Get wsdl via : http://localhost:8080/ws/countries.wsdl
 
 
 Could look at amending the Name Space at some point ...
+
+27/11/18 - played with some settings.  Must have the webServiceConfig to do anything much ... precise contents still shady
